@@ -1,0 +1,21 @@
+# First West Credit Union (Tru Cooperative Bank)
+
+> Member-owned Canadian cooperative financial institution headquartered in Langley, British Columbia, rebranded Tru Cooperative Bank in 2026 upon receiving a federal charter under Canada's Bank Act. Roughly 291,000 members, ~$20.8B in total assets, 45 branches, ~1,300 employees, operating the Envision Financial, Valley First, Island Savings, and Enderby & District Financial regional brands over a shared network. CDIC-insured.
+
+## API posture
+
+- First West / Tru runs **no first-party public developer portal** and publishes **no downloadable OpenAPI, Swagger, or partner API**.
+- Both expected developer hosts fail DNS resolution: `developer.firstwestcu.ca` (NXDOMAIN) and `developer.trucooperativebank.ca` (NXDOMAIN).
+- No `.well-known` documents (security.txt, openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json) are served on any host — all probes return 404.
+- Not a documented FDX participant; no published 1033-style / Consumer-Driven Banking data-access endpoint.
+- Third-party access to member account data today is **aggregator-based** (screen-scraping via providers such as Plaid and Flinks), the voluntary and fragmented Canadian norm while the federal Consumer-Driven Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by the FCAC) remains legislated but not yet operational.
+
+## Links
+
+- [Website](https://www.trucooperativebank.ca/): Consumer/marketing banking site (formerly firstwestcu.ca, which now 301-redirects here).
+- [LinkedIn](https://ca.linkedin.com/company/firstwestcu): Company profile.
+- [X](https://x.com/firstwestcu): Company account.
+
+## Notes
+
+This descriptor is generated from the API Evangelist company record. There is no machine-readable API to reference; the entry exists to track the institution's open-finance posture within the Canadian credit-union landscape.

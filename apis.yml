@@ -33,6 +33,12 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/first-west-credit-union-domain-security.yml
+- type: LLMsTxt
+  url: llms/first-west-credit-union-llms.txt
+- type: WellKnown
+  url: well-known/first-west-credit-union-well-known.yml
 - type: Website
   url: https://www.trucooperativebank.ca/
 - type: LinkedIn
