@@ -1,0 +1,81 @@
+aid: first-west-credit-union
+name: First West Credit Union
+review:
+  question: Does First West Credit Union (Tru Cooperative Bank) expose a public first-party developer API or documented open-banking data-access API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    First West Credit Union — rebranded Tru Cooperative Bank in 2026 upon
+    receiving a federal charter under Canada's Bank Act — publishes no
+    first-party public developer API and runs no developer portal. Probes of
+    the two expected developer hosts both fail DNS resolution:
+    developer.firstwestcu.ca (NXDOMAIN) and developer.trucooperativebank.ca
+    (NXDOMAIN). The primary domain firstwestcu.ca 301-redirects to
+    trucooperativebank.ca, which is a marketing/consumer-banking site with no
+    API documentation, no OpenAPI/Swagger, no API reference, and no OAuth or
+    partner onboarding surface. No downloadable machine-readable specification
+    was found, so none was harvested. This is the honest and common posture for
+    a Canadian credit union: no first-party API, no documented FDX participation,
+    and no published 1033-style / Consumer-Driven Banking data-access endpoint.
+    Third-party access to member data today is aggregator-based (screen-scraping
+    via providers such as Plaid and Flinks), the voluntary and fragmented
+    Canadian norm while the federal Consumer-Driven Banking framework
+    (Budget 2024 / Fall Economic Statement 2024, overseen by the FCAC) remains
+    legislated but not yet operational.
+  institutionType: Federal credit union / member-owned cooperative bank (Schedule I federal charter under Canada's Bank Act as of 2026-04-01; formerly a BC provincial credit union); CDIC-insured
+  developerPortal:
+    exists: false
+    probed:
+      - url: https://developer.firstwestcu.ca
+        status: NXDOMAIN
+        note: Host does not resolve (getaddrinfo ENOTFOUND).
+      - url: https://developer.trucooperativebank.ca
+        status: NXDOMAIN
+        note: Host does not resolve (getaddrinfo ENOTFOUND).
+      - url: https://www.firstwestcu.ca
+        status: 301
+        note: Redirects to https://www.trucooperativebank.ca/ (rebrand). No API docs.
+      - url: https://www.trucooperativebank.ca/
+        status: 200
+        note: Consumer/marketing site. No developer program, API reference, or OpenAPI.
+  specProvenance: none
+  openapiHarvested: false
+  fdxParticipant: false
+  posture1033: none-published
+  authModel: none-documented
+  aggregatorAccess:
+    model: screen-scraping / aggregator
+    providers:
+      - Plaid
+      - Flinks
+    note: No first-party API; consumer data access is aggregator-based, the voluntary Canadian norm.
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public REST API documented.
+    - protocol: OpenAPI
+      documented: false
+      note: No downloadable OpenAPI/Swagger published.
+  consumerDrivenBanking:
+    framework: Canada Consumer-Driven Banking (Budget 2024 / Fall Economic Statement 2024; FCAC overseer)
+    operational: false
+    institutionStatedPosture: none-published
+sources:
+  - url: https://www.trucooperativebank.ca/
+    type: Website
+    note: Rebranded homepage ("Tru Cooperative Bank, formerly First West Credit Union"); ~291k members, ~$20.8B assets, 45 branches, four regional brands. No API content.
+  - url: https://en.wikipedia.org/wiki/First_West_Credit_Union
+    type: Reference
+    note: History, cooperative structure, 2021 federal-continuance vote, 2026 rebrand to Tru Cooperative Bank; no API/open-banking program noted.
+  - url: https://ca.linkedin.com/company/firstwestcu
+    type: LinkedIn
+    note: Company profile.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only bootstrap. apis[] left empty because no first-party public API
+    or documented data-access API exists. common[] carries only verified links
+    (Website, LinkedIn, X). No spec harvested. Record classified as aggregator-only
+    open-finance posture, honestly reflecting the Canadian credit-union reality.
