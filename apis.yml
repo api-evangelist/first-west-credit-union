@@ -18,6 +18,17 @@ description: First West Credit Union — rebranded Tru Cooperative Bank in 2026 
   Canadian norm while the federal Consumer-Driven Banking framework (Budget 2024 /
   Fall Economic Statement 2024, overseen by the FCAC) remains legislated but not yet
   operational.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services
