@@ -1,4 +1,4 @@
-# First West Credit Union (first-west-credit-union)
+# First West Credit Union
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,44 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-First West Credit Union — rebranded **Tru Cooperative Bank** in 2026 — is a member-owned Canadian cooperative financial institution headquartered in Langley, British Columbia. Formed in 2010 from the merger of Envision Credit Union and Valley First, later joined by Island Savings and Enderby & District Financial, it operates those four regional brands over a shared branch network with roughly 291,000 members, about $20.8 billion in total assets, 45 branches, and around 1,300 employees. Following a 2021 member vote for federal continuance, it received a federal charter under Canada's Bank Act and became a federally regulated credit union / cooperative bank (CDIC-insured) as of April 1, 2026.
+First West Credit Union — rebranded Tru Cooperative Bank in 2026 — is a member-owned Canadian cooperative financial institution headquartered in Langley, British Columbia. Formed in 2010 by the merger of Envision Credit Union and Valley First, and later joined by Island Savings and Enderby & District Financial, it operates those four regional brands over a shared branch network with roughly 291,000 members, about $20.8 billion in total assets, 45 branches, and around 1,300 employees. After members voted in 2021 for federal continuance, it received a federal charter under Canada's Bank Act and became a federal credit union / cooperative bank (CDIC-insured) as of April 1, 2026. On the open-finance front First West / Tru runs no first-party public developer portal and publishes no downloadable OpenAPI or partner API; both developer.firstwestcu.ca and developer.trucooperativebank.ca resolve to nothing (NXDOMAIN). Third-party access to member account data today is aggregator-based (screen-scraping via providers such as Plaid and Flinks), the fragmented and voluntary Canadian norm while the federal Consumer-Driven Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by the FCAC) remains legislated but not yet operational.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/first-west-credit-union/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/first-west-credit-union/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Credit Union · Cooperative Bank · British Columbia · Consumer-Driven Banking
 
-## Tags
+## First West Credit Union on APIs.io
 
-- Financial Services
-- Banking
-- Canada
-- Credit Union
-- Cooperative Bank
-- British Columbia
-- Consumer-Driven Banking
-- Data Aggregation
+Everything profiled for First West Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/first-west-credit-union/](https://apis.io/providers/first-west-credit-union/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-First West Credit Union / Tru Cooperative Bank publishes **no first-party public developer API**. There is no developer portal — both `developer.firstwestcu.ca` and `developer.trucooperativebank.ca` return NXDOMAIN — and no downloadable OpenAPI, Swagger, or partner API specification is offered. No `apis[]` entries are recorded because none genuinely exist.
+Authentication, trust centre, and vulnerability disclosure.
 
-## Open-Finance Posture
+- [First West Credit Union Domain Security](https://apis.io/security/first-west-credit-union/first-west-credit-union-domain-security/)
 
-- **First-party developer portal:** None. No `developer.*` host resolves and the public site documents no API program.
-- **The Canadian rails (Interac / Payments Canada RTR):** No published API or documented participation surface of its own; like all Canadian deposit-takers it reaches these shared rails through the co-operative banking system, not a public API.
-- **Consumer-Driven Banking (CDB):** Canada's federal Consumer-Driven Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by the Financial Consumer Agency of Canada) is legislated but **not yet operational**. No FDX participation and no stated 1033-style posture were found published for this institution.
-- **Aggregator access:** Member account-data access today is aggregator/screen-scraping based (providers such as Plaid and Flinks), the voluntary and fragmented Canadian norm — not a first-party API.
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.trucooperativebank.ca/)
-- [LinkedIn](https://ca.linkedin.com/company/firstwestcu)
-- [X](https://x.com/firstwestcu)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 3.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/first-west-credit-union/](https://apis.io/providers/first-west-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for First West Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/first-west-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
